@@ -28,7 +28,7 @@ stage('Nexus Image Push'){
    sh "docker tag iamooviya/myweb:0.0.2 15.207.21.22:8083/damo:1.0.0"
    sh 'docker push 15.207.21.22:8083/damo:1.0.0'
    }
-stage('Remove Previous Container'){
+	stage('Remove Previous Container'){
 	try{
 		sh 'docker rm -f tomcattest'
 	}catch(error){
