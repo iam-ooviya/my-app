@@ -35,7 +35,7 @@ stage('Remove Previous Container'){
 		//  do nothing if there is an exception
 	}
 stage('Docker deployment'){
-   sh 'docker run -d -p 8096:8080 --name tomcattest iamooviya/myweb:0.0.2' 
+   sh 'docker run -d -p 8097:8080 --name tomcattest iamooviya/myweb:0.0.2' 
    }
 }
 }
